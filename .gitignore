@@ -21,4 +21,4 @@
 ## Mac OS X metadata files:
 *.DS_Store
 
-/examples/*.pdf
+*.pdf
