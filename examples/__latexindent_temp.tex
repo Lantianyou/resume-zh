@@ -1,13 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for Cover Letter
+% Awesome CV LaTeX Template for CV/Resume
 %
 % This template has been downloaded from:
 % https://github.com/posquit0/Awesome-CV
 %
-% Authors:
+% Author:
 % Claud D. Park <posquit0.bj@gmail.com>
-% Lars Richter <mail@ayeks.de>
+% http://www.posquit0.com
 %
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
@@ -52,9 +52,9 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[circle,noedge,left]{./examples/profile}
+% \photo[rectangle,edge,right]{./examples/profile}
 \name{兰天游}{}
-\position{产品经理{\enskip\cdotp\enskip}Product Manager}
+\position{{\enskip\cdotp\enskip}}
 % \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
 \mobile{151-1078-5777}
@@ -77,26 +77,6 @@
 
 
 %-------------------------------------------------------------------------------
-%	LETTER INFORMATION
-%	All of the below lines must be filled out
-%-------------------------------------------------------------------------------
-% The company being applied to
-\recipient
-  {}
-  {}
-% The date on the letter, default is the date of compilation
-\letterdate{\today}
-% The title of the letter
-\lettertitle{产品经理求职}
-% How the letter is opened
-\letteropening{Dear Mr./Ms./Dr. LastName,}
-% How the letter is closed
-\letterclosing{顺颂商祺}
-% Any enclosures with the letter
-\letterenclosure[Attached]{Curriculum Vitae}
-
-
-%-------------------------------------------------------------------------------
 \begin{document}
 
 % Print the header with above personal informations
@@ -107,24 +87,24 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Tianyou Lan~~·~~~Cover Letter}
-  {}
-
-% Print the title with above letter informations
-\makelettertitle
-
-%-------------------------------------------------------------------------------
-%	LETTER CONTENT
-%-------------------------------------------------------------------------------
-\begin{cvletter}
-
-\lettersection{关于}
-兰天游，男，于七月毕业于上海财经大学统计学本科。热爱读书，痴迷于互联网行业，在校期间读过大量创业者，投资人书籍，了解互联网发展情况和美国文化政治。英文流利，翻译过5万字以上英文统计学论文和商业文章，和上财外国教授有多次合作研究，托福109（满分120）。因疫情影响，交通受限，只能放弃潮玩族实习。现乞一面试机会，如不通过绝不再三骚扰。服从分配，能接受高强度工作，能接受在中国任何城市工作，能接受外派到其他国家。
-\end{cvletter}
+  {Tianyou Lan~~~·~~~Résumé}
+  {\thepage}
 
 
 %-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter informations
-\makeletterclosing
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+% \input{resume/summary.tex}
+\input{resume/education.tex}
+% \input{resume/skills.tex}
+\input{resume/writing.tex}
+\input{resume/experience.tex}
+% \input{resume/honors.tex}
+% \input{resume/presentation.tex}
+% \input{resume/committees.tex}
+% \input{resume/extracurricular.tex}
 
+
+%-------------------------------------------------------------------------------
 \end{document}
